@@ -1,0 +1,18 @@
+<div class="main-footer__row main-footer__row-1">
+  <h2 class="heading heading-sm main-footer__heading-sm">
+    <span>Social</span>
+  </h2>
+
+  <div class="main-footer__social-cont">
+
+    {% for item in site.data.social %}
+    
+    <a target="_blank" rel="noreferrer" href="{{ item.href }}">
+      <img class="main-footer__icon" src="{{ item.img-white }}"
+        />
+    </a>  
+  
+    {% endfor %}
+
+  </div>
+</div>

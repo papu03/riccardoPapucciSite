@@ -1,0 +1,14 @@
+<div class="home-hero__socials">
+
+  {% for item in site.data.social %}
+  <div class="home-hero__social">
+  <a href="{{ item.href }}" class="home-hero__social-icon-link" rel="noreferrer"
+      target="_blank">
+      <img src="{{ item.img-dark }}"
+        class="home-hero__social-icon" />
+    </a>
+  </div>  
+
+  {% endfor %}
+  
+</div>

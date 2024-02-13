@@ -1,0 +1,21 @@
+<section class="home-hero">
+
+    <div class="home-hero__content">
+      <h1 class="heading-primary">Hey, I'm {{page.developer}}</h1>
+      <div class="home-hero__info">
+        <p class="text-primary">
+          {{page.about_myself}}
+        </p>
+      </div>
+      <div class="home-hero__cta">
+        <a href="{{site.data.navigation[2].link}}" class="btn btn--bg">Projects</a>
+      </div>
+    </div>
+
+    {% include social-sidebar.html %} 
+
+
+    <div class="home-hero__mouse-scroll-cont">
+      <div class="mouse"></div>
+    </div>
+  </section>
