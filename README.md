@@ -1,1 +1,1 @@
-# riccardoPapucciSite
+Static website about riccardo papucci, developed by jekyll 
