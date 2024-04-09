@@ -3,8 +3,7 @@
       <h2 class="heading heading-sec heading-sec__mb-med">
         <span class="heading-sec__main">About Me</span>
         <span class="heading-sec__sub">
-          Here you will find more information about me, what I do, and my
-          current skills mostly in terms of programming and technology
+          Here you can discover additional details about me, my work, and my current abilities, primarily focusing on programming and technology.
         </span>
       </h2>
       <div class="about__content">
@@ -12,44 +11,47 @@
           <h3 class="about__content-title">Get to know me!</h3>
           <div class="about__content-details">
             <p class="about__content-details-para">
-              I'm a <strong>Frontend Web Developer</strong> building the
-              Front-end of Websites and Web Applications that leads to the
-              success of the overall product. Check out some of my work in the
-              <strong>Projects</strong> section.
+              
+              I am a <strong>Computer Engineer</strong> with a Master's degree, 
+
+              and I've dedicated many years of my career to the dynamic world of technology at a prominent company 
+              
+              named <a rel="noreferrer" href="{{site.data.social[2].href}}" target="_blank">MAIOR</a>. 
+              
+              My expertise lies in crafting cutting-edge web applications, specifically tailored for the aviation industry. 
+              
+              Armed with a solid foundation from my university years, I have honed my skills over more than five years, playing a pivotal role in conceptualizing and bringing to life a <strong>Web Application</strong> designed exclusively for airlines. 
+              
+              I am well-versed in the entire software lifecycle, having been deeply involved in every aspect - from the initial design phase to the comprehensive execution as a <strong>Full-Stack Developer</strong>.
+              
+              My journey includes not just creating applications from scratch but also overseeing the intricate details of the software development process. 
+              
+              I specialize in continuous integration and continuous deployment (CI/CD) for both the backend and frontend, as well as managing the database. 
+              
+              Additionally, my expertise extends to the realm of DevOps, ensuring a seamless and efficient development process.
+              
+              My commitment to excellence and my hands-on experience have made me an industry expert. 
+              
+              I am passionate about transforming ideas into robust digital solutions, and I'm excited about the prospect of bringing my skills to your project. 
+              
+              Let's connect and explore how I can contribute to the success of your next endeavor!
+
+      
             </p>
-            <p class="about__content-details-para">
-              I also like sharing content related to the stuff that I have
-              learned over the years in <strong>Web Development</strong> so it
-              can help other people of the Dev Community. Feel free to Connect
-              or Follow me on my
-              <a rel="noreferrer" href="https://linkedin.com/in/rammcodes" target="_blank">Linkedin</a>
-              where I post useful content related to Web Development and
-              Programming
-            </p>
-            <p class="about__content-details-para">
-              I'm open to <strong>Job</strong> opportunities where I can
-              contribute, learn and grow. If you have a good opportunity that
-              matches my skills and experience then don't hesitate to
-              <strong>contact</strong> me.
-            </p>
+            
           </div>
           <a href="./#contact" class="btn btn--med btn--theme dynamicBgClr">Contact</a>
         </div>
         <div class="about__content-skills">
           <h3 class="about__content-title">My Skills</h3>
+
+      
           <div class="skills">
-            <div class="skills__skill">HTML</div>
-            <div class="skills__skill">CSS</div>
-            <div class="skills__skill">JavaScript</div>
-            <div class="skills__skill">React</div>
-            <div class="skills__skill">SASS</div>
-            <div class="skills__skill">GIT</div>
-            <div class="skills__skill">Github</div>
-            <div class="skills__skill">Responsive Design</div>
-            <div class="skills__skill">SEO</div>
-            <div class="skills__skill">Terminal</div>
-            <div class="skills__skill">Express Basics</div>
-            <div class="skills__skill">SQL Basics</div>
+            {% for item in site.data.skills %}
+    
+            <div class="skills__skill">{{ item.skill }}</div>
+  
+            {% endfor %}
           </div>
         </div>
       </div>
