@@ -1,0 +1,27 @@
+
+
+
+<div class="header__sm-menu">
+    <div class="header__sm-menu-content">
+      <ul class="header__sm-menu-links">
+
+        {% for itemByLanguage in site.data.navigation.languages %} 
+
+        {% if itemByLanguage.language == page.lang %} 
+
+         {% for navData in itemByLanguage.navData %}
+          <li class="header__sm-menu-link">
+            <a href="{{ navData.link }}"> {{ navData.name }} </a>
+          </li> 
+         {% endfor %}
+ 
+
+        {% endif %} 
+
+        {% endfor %}
+
+      
+      </ul>
+    </div>
+  </div> 
+

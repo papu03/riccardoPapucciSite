@@ -1,8 +1,21 @@
-- name: Home
-  link: ./
-- name: About
-  link: ./#about
-- name: Projects
-  link: ./#projects
-- name: Contact
-  link: ./#contact    
+languages: 
+- language: "en"
+  navData:
+    - name: Home
+      link: ./
+    - name: About
+      link: ./#about
+    - name: Projects
+      link: ./#projects
+    - name: Contact
+      link: ./#contact
+- language: "it"
+  navData:
+    - name: Home
+      link: ./
+    - name: Su di me
+      link: ./#about
+    - name: Progetti
+      link: ./#projects
+    - name: Contatti
+      link: ./#contact        

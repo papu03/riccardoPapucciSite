@@ -1,0 +1,22 @@
+
+<ul class="header__links">
+
+  {% for itemByLanguage in site.data.navigation.languages %} 
+
+  {% if itemByLanguage.language == page.lang %} 
+
+   {% for navData in itemByLanguage.navData %}
+    <li class="header__link-wrapper">
+      <a href="{{ navData.link }}" class="header__link"> {{ navData.name }} </a>
+    </li> 
+
+   {% endfor %}
+
+
+  {% endif %} 
+
+  {% endfor %}
+
+
+</ul>
+
