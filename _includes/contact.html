@@ -1,10 +1,11 @@
 <section id="contact" class="contact sec-pad dynamicBg">
+    {% for itemByLanguage in site.data.contact.languages %} 
+    {% if itemByLanguage.language == page.lang %} 
     <div class="main-container">
       <h2 class="heading heading-sec heading-sec__mb-med">
-        <span class="heading-sec__main heading-sec__main--lt">Contact</span>
+        <span class="heading-sec__main heading-sec__main--lt">{{itemByLanguage.title}}</span>
         <span class="heading-sec__sub heading-sec__sub--lt">
-          Feel free to Contact me by submitting the form below and I will get
-          back to you as soon as possible
+          {{itemByLanguage.description}}
         </span>
       </h2>
       <div class="contact__form-container">
@@ -12,26 +13,29 @@
           <input type="hidden" name="form-name" value="form 1" />
         
           <div class="contact__form-field">
-            <label class="contact__form-label" for="name">Name</label>
-            <input required placeholder="Enter Your Name" type="text" class="contact__form-input" name="name" id="name" />
+            <label class="contact__form-label" for="name">{{itemByLanguage.form-name-title}}</label>
+            <input required placeholder="{{itemByLanguage.form-name-content}}" type="text" class="contact__form-input" name="name" id="name" />
           </div>
         
           <div class="contact__form-field">
-            <label class="contact__form-label" for="email">Email</label>
-            <input required placeholder="Enter Your Email" type="email" class="contact__form-input" name="email" id="email" />
+            <label class="contact__form-label" for="email">{{itemByLanguage.form-email-title}}</label>
+            <input required placeholder="{{itemByLanguage.form-email-content}}" type="email" class="contact__form-input" name="email" id="email" />
           </div>
         
           <div class="contact__form-field">
-            <label class="contact__form-label" for="message">Message</label>
-            <textarea required cols="30" rows="10" class="contact__form-input" placeholder="Enter Your Message" name="message" id="message"></textarea>
+            <label class="contact__form-label" for="message">{{itemByLanguage.form-message-title}}</label>
+            <textarea required cols="30" rows="10" class="contact__form-input" placeholder="{{itemByLanguage.form-message-content}}" name="message" id="message"></textarea>
           </div>
         
           <button type="submit" class="btn btn--theme contact__btn" id="submitBtn">
-            Submit
+            {{itemByLanguage.form-submit}}
           </button>
         </form>
       </div>
     </div>
+    {% endif %} 
+    {% endfor %}
+
   </section>
 
 

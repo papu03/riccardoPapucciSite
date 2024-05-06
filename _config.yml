@@ -1,0 +1,45 @@
+locales:
+  default:
+    baseurl: ""
+    lang: it-ITA
+    name: Italiano
+  en:
+    baseurl: /en
+    lang: en-US
+    name: English
+
+collections:
+  pages_en:
+    output: true
+    permalink: /en/:path/   
+
+defaults:
+# set page.collection_basename to match collections
+- scope:
+    type: pages
+  values:
+    layout: page
+    collection_basename: pages
+- scope:
+    path: "_pages*/"
+  values:
+    layout: page
+    collection_basename: pages     
+- scope:
+    path: "*_en/"
+  values:
+    locale: en
+    lang: en-EN
+    collection_suffix: _en
+- scope:
+    path: ""
+  values:
+    locale: default
+    lang: it-IT    
+- scope:
+    path: "_pages_en/index.*"
+  values:
+    permalink: "/en/"    
+
+include: 
+  - assets

@@ -1,11 +1,43 @@
-- title: Twitter Event Detector
-  description:  Dopefolio is a successful Open-Source project that I created which have been featured on
-              some of the biggest tech sites like CSS-Tricks, Hostinger, etc & used by thousands of developers globally
-  img-path: assets/img/twitter-event-detector.png
-  style: "width:100%"
+languages: 
+  - language: "it"
+    title: progetti
+    description: Ecco alcuni dei progetti che ho sviluppato
+    projectsData:
+    - title: Twitter Event Detector
+      description:  Twitter Event Detector è un’applicazione web il cui obiettivo è quello di rilevare dei micro-eventi (incidenti, concerti, manifestazioni sportive, etc.) all'interno di una città, tramite l'analisi dei tweets geolocalizzati.
 
-- title: Sortimo
-  description:  Dopefolio is a successful Open-Source project that I created which have been featured on
-              some of the biggest tech sites like CSS-Tricks, Hostinger, etc & used by thousands of developers globally
-  img-path: assets/img/sortimo.png
-  style: "width:50%"
+                  Il popolare social network Twitter rende disponibili un’enorme quantità di dati dei loro utenti, a cui vengono associate l’esatte  geolocalizzazioni, condivise in real time. Gli utenti volontariamente condividono, in ambienti pubblici, foto, video e testi che riflettono la loro attenzione, interesse, opinioni, espressioni artistiche e, in alcuni casi, cosa succede intorno a loro.
+
+                  Questi dati presentano un’opportunità di scoprire micro eventi usando solamente il contenuto dei tweets. Definisco i micro eventi come eventi che avvengono in un punto preciso di una città, come ad esempio in una strada o in un palazzo, piuttosto che eventi che avvengono in tutta la città o in tutto uno stato.
+
+                  Questi eventi possono essere da un concerto, a un’esibizione, a una protesta, a una emergenza come un incendio o un’esplosione. 
+
+      img-path: assets/img/twitter-event-detector.png
+      style: "width:100%"
+
+    - title: Sortimo
+      description:  App che offre una soluzione completa per migliorare l'esperienza nei pub, sia per i clienti che per i barman. 
+                    Per i clienti, l'app consente di visualizzare e prenotare facilmente posti nei pub affiliati, mentre per i barman offre strumenti per gestire le prenotazioni e i servizi in modo efficiente. 
+                    La funzionalità di lettura dei QR code aggiunge praticità al processo.
+      img-path: assets/img/sortimo.png
+      style: "width:50%"
+  - language: "en"
+    title: projects
+    description: Here are some of the projects I've developed.
+    projectsData:
+    - title: Twitter Event Detector
+      description:  Twitter Event Detector is a web application aimed at detecting micro-events (such as accidents, concerts, sports events, etc.) within a city through the analysis of geolocated tweets. 
+                    The popular social network Twitter provides a vast amount of user data, including precise geolocations shared in real-time. 
+                    Users voluntarily share photos, videos, and texts reflecting their attention, interests, opinions, artistic expressions, and sometimes happenings around them in public settings. 
+                    These data offer an opportunity to discover micro-events using only the content of tweets. 
+                    I define micro-events as occurrences at specific locations within a city, such as on a street or in a building, rather than events spanning across the entire city or state. 
+                    These events range from concerts, performances, protests, to emergencies like fires or explosions.
+      img-path: ../assets/img/twitter-event-detector.png
+      style: "width:100%"
+
+    - title: Sortimo
+      description:  An app that provides a comprehensive solution to enhance the pub experience, both for customers and bartenders. 
+                    For customers, the app enables easy viewing and booking of seats at affiliated pubs, while for bartenders, it provides tools to efficiently manage reservations and services. 
+                    The QR code reading functionality adds convenience to the process.
+      img-path: ../assets/img/sortimo.png
+      style: "width:50%"

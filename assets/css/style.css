@@ -346,7 +346,8 @@ textarea{
 .projects__row-img-cont{
     overflow:hidden;
     display: flex;
-    justify-content: center
+    justify-content: center;
+    align-items: center;
 }
 .projects__row-img{
     width:100%;
@@ -695,6 +696,9 @@ textarea{
 }
 .header__main-ham-menu{
     width:100%
+}
+a.not-available {
+    color: grey;
 }
 .header__main-ham-menu-close{
     width:100%

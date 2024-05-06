@@ -1,15 +1,18 @@
 <section id="projects" class="projects sec-pad">
+  {% for itemByLanguage in site.data.projects.languages %} 
+  {% if itemByLanguage.language == page.lang %} 
     <div class="main-container">
       <h2 class="heading heading-sec heading-sec__mb-bg">
-        <span class="heading-sec__main">Projects</span>
+        <span class="heading-sec__main">{{itemByLanguage.title}}</span>
         <span class="heading-sec__sub">
-          Here you will find some of the personal and clients projects that I
-          created with each project containing its own case study
+          {{itemByLanguage.description}}
         </span>
       </h2>
 
+      
+
       <div class="projects__content">
-        {% for item in site.data.projects %}
+        {% for item in itemByLanguage.projectsData %}
 
         <div class="projects__row">
           <div class="projects__row-img-cont">
@@ -21,12 +24,14 @@
             <p class="projects__row-content-desc">
               {{ item.description }}
             </p>
-            <a class='btn btn--med btn--theme dynamicBgClr' href='/project-1' target='_blank'>Case Study</a>
           </div>
         </div>
 
         {% endfor %}
       
       </div>
+
     </div>
+  {% endif %} 
+  {% endfor %}  
   </section>

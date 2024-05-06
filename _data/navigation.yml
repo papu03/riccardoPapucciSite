@@ -13,7 +13,7 @@ languages:
   navData:
     - name: Home
       link: ./
-    - name: Su di me
+    - name: Chi sono
       link: ./#about
     - name: Progetti
       link: ./#projects

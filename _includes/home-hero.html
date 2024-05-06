@@ -1,16 +1,20 @@
 <section class="home-hero">
 
+  {% for itemByLanguage in site.data.home-hero.languages %} 
+  {% if itemByLanguage.language == page.lang %} 
     <div class="home-hero__content">
-      <h1 class="heading-primary">Hey, I'm {{page.developer}}</h1>
+      <h1 class="heading-primary">{{itemByLanguage.title}} {{page.developer}}</h1>
       <div class="home-hero__info">
         <p class="text-primary">
           {{page.about_myself}}
         </p>
       </div>
       <div class="home-hero__cta">
-        <a href="{{site.data.navigation[2].link}}" class="btn btn--bg">Projects</a>
+        <a href="./#projects" class="btn btn--bg">Projects</a>
       </div>
     </div>
+  {% endif %} 
+  {% endfor %}  
 
     {% include social-sidebar.html %} 
 

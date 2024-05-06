@@ -1,49 +1,27 @@
 <section id="about" class="about sec-pad">
+    {% for itemByLanguage in site.data.about.languages %} 
+    {% if itemByLanguage.language == page.lang %} 
     <div class="main-container">
       <h2 class="heading heading-sec heading-sec__mb-med">
-        <span class="heading-sec__main">About Me</span>
+        <span class="heading-sec__main">{{itemByLanguage.title}}</span>
         <span class="heading-sec__sub">
-          Here you can discover additional details about me, my work, and my current abilities, primarily focusing on programming and technology.
-        </span>
+          {{itemByLanguage.description}}
+                </span>
       </h2>
       <div class="about__content">
         <div class="about__content-main">
-          <h3 class="about__content-title">Get to know me!</h3>
+          <h3 class="about__content-title">{{itemByLanguage.content-title}}</h3>
           <div class="about__content-details">
             <p class="about__content-details-para">
-              
-              I am a <strong>Computer Engineer</strong> with a Master's degree, 
-
-              and I've dedicated many years of my career to the dynamic world of technology at a prominent company 
-              
-              named <a rel="noreferrer" href="{{site.data.social[2].href}}" target="_blank">MAIOR</a>. 
-              
-              My expertise lies in crafting cutting-edge web applications, specifically tailored for the aviation industry. 
-              
-              Armed with a solid foundation from my university years, I have honed my skills over more than five years, playing a pivotal role in conceptualizing and bringing to life a <strong>Web Application</strong> designed exclusively for airlines. 
-              
-              I am well-versed in the entire software lifecycle, having been deeply involved in every aspect - from the initial design phase to the comprehensive execution as a <strong>Full-Stack Developer</strong>.
-              
-              My journey includes not just creating applications from scratch but also overseeing the intricate details of the software development process. 
-              
-              I specialize in continuous integration and continuous deployment (CI/CD) for both the backend and frontend, as well as managing the database. 
-              
-              Additionally, my expertise extends to the realm of DevOps, ensuring a seamless and efficient development process.
-              
-              My commitment to excellence and my hands-on experience have made me an industry expert. 
-              
-              I am passionate about transforming ideas into robust digital solutions, and I'm excited about the prospect of bringing my skills to your project. 
-              
-              Let's connect and explore how I can contribute to the success of your next endeavor!
-
+              {{itemByLanguage.content}}
       
             </p>
             
           </div>
-          <a href="./#contact" class="btn btn--med btn--theme dynamicBgClr">Contact</a>
+          <a href="./#contact" class="btn btn--med btn--theme dynamicBgClr">{{itemByLanguage.contact-title}}</a>
         </div>
         <div class="about__content-skills">
-          <h3 class="about__content-title">My Skills</h3>
+          <h3 class="about__content-title">Skills</h3>
 
       
           <div class="skills">
@@ -56,4 +34,6 @@
         </div>
       </div>
     </div>
+    {% endif %} 
+    {% endfor %}
   </section>

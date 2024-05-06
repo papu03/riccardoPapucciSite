@@ -1,0 +1,44 @@
+languages: 
+  - language: "it"
+    title: Chi sono
+    description:  Benvenuti nella sezione dedicata a scoprire ulteriori dettagli su di me, il mio lavoro e le mie attuali competenze, con un focus principale su programmazione e tecnologia.
+                  Sono qui per condividere con te la mia storia, la mia passione per l'innovazione e il mio impegno nell'ambito della tecnologia.
+    content-title: Scopri di più su di me!
+    contact-title: contatti
+    content:  Sono un <strong>Ingegnere Informatico</strong> con una laurea magistrale, e ho trascorso molti anni creando soluzioni innovative presso l'azienda chiamata <a rel="noreferrer" href="{{site.data.social[2].href}}" target="_blank">MAIOR</a>. 
+              Grazie alla mia solida formazione accademica e alla mia esperienza pluriennale, ho contribuito in modo significativo alla realizzazione di una <strong>Web Application</strong> su misura per le compagnie aeree. 
+              Come <strong>Full-Stack Developer</strong>, ho affrontato ogni sfida del ciclo di vita del software, dalla concezione all'implementazione. 
+              Il mio obiettivo è sempre stato quello di superare i limiti, garantendo un'eccellenza in ogni dettaglio del processo di sviluppo. 
+              La mia specializzazione include l'integrazione e la distribuzione continue (CI/CD), così come la gestione del backend, del frontend e del database. 
+              Inoltre, sono esperto nel campo del DevOps, garantendo un flusso di lavoro fluido ed efficiente. 
+              Il mio impegno per l'eccellenza e la mia esperienza pratica mi hanno reso un punto di riferimento nel settore. 
+              Sono motivato dalla sfida di trasformare idee in realtà digitali, e sarei entusiasta di collaborare al successo a nuovi progetti. Cosa aspetti a contattarmi?
+  - language: "en"
+    title: About Me
+    description:  Here you can discover additional details about me, my work, and my current abilities, primarily focusing on programming and technology.
+    content-title: Get to know me!
+    contact-title: contact
+    content:  I am a <strong>Computer Engineer</strong> with a Master's degree, 
+
+            and I've dedicated many years of my career to the dynamic world of technology at a prominent company 
+            
+            named <a rel="noreferrer" href="{{site.data.social[2].href}}" target="_blank">MAIOR</a>. 
+            
+            My expertise lies in crafting cutting-edge web applications, specifically tailored for the aviation industry. 
+            
+            Armed with a solid foundation from my university years, I have honed my skills over more than five years, playing a pivotal role in conceptualizing and bringing to life a <strong>Web Application</strong> designed exclusively for airlines. 
+            
+            I am well-versed in the entire software lifecycle, having been deeply involved in every aspect - from the initial design phase to the comprehensive execution as a <strong>Full-Stack Developer</strong>.
+            
+            My journey includes not just creating applications from scratch but also overseeing the intricate details of the software development process. 
+            
+            I specialize in continuous integration and continuous deployment (CI/CD) for both the backend and frontend, as well as managing the database. 
+            
+            Additionally, my expertise extends to the realm of DevOps, ensuring a seamless and efficient development process.
+            
+            My commitment to excellence and my hands-on experience have made me an industry expert. 
+            
+            I am passionate about transforming ideas into robust digital solutions, and I'm excited about the prospect of bringing my skills to your project. 
+            
+            Let's connect and explore how I can contribute to the success of your next endeavor!
+   
