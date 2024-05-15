@@ -1,5 +1,6 @@
 <header class="header">
     <div class="header__content">
+
       <div class="header__logo-container">
         <div class="header__logo-img-cont">
           <img src="{{page.assets-path}}/img/profile-img.jpg" alt="Riccardo papucci Logo Image"
@@ -7,18 +8,18 @@
         </div>
         <span class="header__logo-sub">{{page.developer}}</span>
       </div>
+        
+      
       <div class="header__main">
         
         {% include navigation-header.html %} 
 
-        <div class="header__main-ham-menu-cont">
-          <img src="{{page.assets-path}}/img/ham-menu.svg" alt="hamburger menu" class="header__main-ham-menu" />
-          <img src="{{page.assets-path}}/img/ham-menu-close.svg" alt="hamburger menu close"
-            class="header__main-ham-menu-close d-none" />
-        </div>
+        
       </div>
+
+      
     </div>
-    {% include lang-switcher.html %} 
+    
     {% include navigation-menu.html %} 
 
 

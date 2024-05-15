@@ -1,6 +1,5 @@
 languages: 
   - language: "it"
-    title: progetti
     description: Ecco alcuni dei progetti che ho sviluppato
     projectsData:
     - title: Twitter Event Detector
@@ -22,7 +21,6 @@ languages:
       img-path: assets/img/sortimo.png
       style: "width:50%"
   - language: "en"
-    title: projects
     description: Here are some of the projects I've developed.
     projectsData:
     - title: Twitter Event Detector

@@ -1,20 +1,44 @@
-<nav class="lang-switcher" aria-label="{{ locale_strings.language_selector }}">
-  <ul>
-    {% for locale in site.locales %}
-    {% assign label = locale[0] %}
-    {% assign locale_object = locale[1] %}
-    <li lang="{{ locale_object.lang }}">
-      {% if label == page.locale %}
-      <a href="{{ page.url | prepend: site.baseurl }}" aria-current="true">{{ locale_object.name }}</a>
-      {% else %}
-        {% assign localized_page = localized_pages | where: "locale", label | first %}
-        {% if localized_page %}
-        <a href="{{ localized_page.url | prepend: site.baseurl }}" hreflang="{{ locale_object.lang }}">{{ locale_object.name }}</a>
-        {% else %}
-        <a href="{{ locale_object.baseurl | prepend: site.baseurl }}/" hreflang="{{ locale_object.lang }}" class="not-available">{{ locale_object.name }}</a>
-        {% endif %}
-      {% endif %}
-    </li>
-    {% endfor %}
-  </ul>
-</nav>
+<div >
+
+  <select id="mySelect"  onchange="switchLanguage()" >
+    {% if page.lang == "it" %}
+    <option value="/" data-image="{{page.assets-path}}/img/logo/ita.svg" selected>ita</option>
+    <option value="/en" data-image="{{page.assets-path}}/img/logo/eng.svg">eng</option>
+    {% endif %} 
+    {% if page.lang == "en" %}
+    <option value="/en" data-image="{{page.assets-path}}/img/logo/eng.svg" selected>eng</option>
+    <option value="/" data-image="{{page.assets-path}}/img/logo/ita.svg">ita</option>
+    {% endif %} 
+  </select>
+
+ 
+</div>
+
+
+
+<script>
+  function switchLanguage() {
+    var x = document.getElementById("mySelect").value;
+    window.location.href = x
+  }
+  
+  $(document).ready(function() {
+      $('#mySelect').select2({
+        templateResult: formatOption,
+        templateSelection: formatOption
+            });
+  });
+
+  function formatOption(option) {
+      if (!option.id) {
+          return option.text;
+      }
+
+      var $option = $(
+          '<div class="language-item"><img src="' + $(option.element).data('image') + '" class="img-flag" /></div>'
+      );
+      return $option;
+  }
+</script>
+
+

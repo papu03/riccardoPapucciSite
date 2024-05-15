@@ -1,4 +1,6 @@
 
+<div class="navigation-header-container">
+  
 <ul class="header__links">
 
   {% for itemByLanguage in site.data.navigation.languages %} 
@@ -19,4 +21,15 @@
 
 
 </ul>
+
+{% include lang-switcher.html %} 
+
+<div class="header__main-ham-menu-cont">
+  <img src="{{page.assets-path}}/img/ham-menu.svg" alt="hamburger menu" class="header__main-ham-menu" />
+  <img src="{{page.assets-path}}/img/ham-menu-close.svg" alt="hamburger menu close"
+    class="header__main-ham-menu-close d-none" />
+</div>
+
+
+</div>
 

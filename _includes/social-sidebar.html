@@ -4,7 +4,7 @@
 
   {% for item in site.data.social %}
   <div class="home-hero__social">
-  <a href="{{page.assets-path}}/{{ item.href }}" class="home-hero__social-icon-link" rel="noreferrer"
+  <a href="{{ item.href }}" class="home-hero__social-icon-link" rel="noreferrer"
       target="_blank">
       <img src="{{page.assets-path}}/{{ item.img-dark }}"
         class="home-hero__social-icon" />
