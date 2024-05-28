@@ -1,7 +1,16 @@
 services:
-  jekyll:
-    image: bretfisher/jekyll-serve
-    volumes:
-      - .:/site
-    ports:
-      - '4000:4000'
+  # riccardopapucci:
+  #   image: bretfisher/jekyll-serve
+  #   volumes:
+  #     - .:/site
+  #   ports:
+  #     - '4000:4000'
+  nginx:
+      image: papucci/nginx-riccardopapucci:0.0.1
+      # build:
+      #     context: ./_nginx
+      #     dockerfile: Dockerfile
+      ports:
+          - 1337:80
+      # depends_on:
+      #     - riccardopapucci  
