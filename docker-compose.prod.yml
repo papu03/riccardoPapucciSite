@@ -1,13 +1,5 @@
 services:
   riccardopapucci:
-    image: papucci/riccardopapucci-prod:0.0.1
-    volumes:
-      - .:/site
-    ports:
-      - '4000:4000'
-  # nginx:
-  #     image: papucci/nginx-riccardopapucci:0.0.1
-  #     ports:
-  #         - 1337:80
-  #     depends_on:
-  #         - riccardopapucci  
+      image: papucci/nginx-riccardopapucci:0.0.2
+      ports:
+          - 1337:80

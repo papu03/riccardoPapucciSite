@@ -1,27 +1,31 @@
-FROM ruby:3.1-slim-bullseye as jekyll
+# Specifing our base container, in my case the Ruby version 3.1.3 container
+FROM ruby:3.1.3 as builder
 
-RUN apt-get update && apt-get install -y --no-install-recommends \
-    build-essential \
-    git \
-    && rm -rf /var/lib/apt/lists/*
+# Set the current working directory in the container
+WORKDIR /usr/src/app
 
-# used in the jekyll-server image, which is FROM this image
-COPY docker-entrypoint.sh /usr/local/bin/
+#Copy over our gem files and gemspec files
+COPY Gemfile jekyll-theme-chirpy.gemspec ./ 
 
-RUN gem update --system && gem install jekyll && gem cleanup
+# Install the required gems
+RUN bundle install 
 
-EXPOSE 4000
+# Copy over everything from our local directory to the container
+COPY . . 
 
-WORKDIR /site
+# Generate our static site
+RUN JEKYLL_ENV=production bundle exec jekyll build 
 
-ENTRYPOINT [ "jekyll" ]
 
-CMD [ "--help" ]
 
-# build from the image we just built with different metadata
-FROM jekyll as jekyll-serve
+# Specifing our base container
+FROM nginx:latest
 
-# on every container start, check if Gemfile exists and warn if it's missing
-ENTRYPOINT [ "docker-entrypoint.sh" ]
+# Copy the generated static files from our Ruby container and placing them in the default nginx directory
+COPY --from=builder /usr/src/app/_site /usr/share/nginx/html
 
-CMD [ "bundle", "exec", "jekyll", "serve", "--force_polling", "-H", "0.0.0.0", "-P", "4000" ]
+# Instucting docker that we wish to expose port 80
+EXPOSE 80
+
+# Secifing the command that will be run when the container starts, this case running nginix in the foreground.
+CMD ["nginx", "-g", "daemon off;"]
