@@ -21,16 +21,17 @@ RUN JEKYLL_ENV=production bundle exec jekyll build
 # Specifing our base container
 FROM nginx:latest
 
-COPY _nginx/nginx.conf /etc/nginx
+
+# COPY ./_nginx/nginx-no-ssl.conf /etc/nginx/conf.d/default.conf
+COPY ./_nginx/nginx-no-ssl.conf /etc/nginx/nginx.conf
+
 
 # Copy the generated static files from our Ruby container and placing them in the default nginx directory
 COPY --from=builder /usr/src/app/_site /usr/share/nginx/html
 
-# Copia i certificati SSL (assicurati di averli nella directory _nginx/ssl)
-COPY _nginx/ssl /etc/nginx/ssl
 
-# Instucting docker that we wish to expose port 80 and 443
-# EXPOSE 80
+# Instucting docker that we wish to expose port 80 
+EXPOSE 80
 # EXPOSE 443
 
 
