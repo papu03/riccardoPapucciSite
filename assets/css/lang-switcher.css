@@ -2,7 +2,9 @@
     height: 12px;
 
 } */
-
+.lang-switcher-container{
+    padding: 14px;
+}
 .language-item{
     display: flex;
     justify-content: center;
