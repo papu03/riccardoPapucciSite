@@ -1,15 +1,15 @@
 languages: 
   - language: "it"
-    description: Ecco alcuni dei progetti che ho sviluppato
+    description: Ecco alcuni dei progetti a cui ho lavorato
     projectsData:
     - title: Twitter Event Detector
-      description:  Twitter Event Detector è un’applicazione web il cui obiettivo è quello di rilevare dei micro-eventi (incidenti, concerti, manifestazioni sportive, etc.) all'interno di una città, tramite l'analisi dei tweets geolocalizzati.
+      description:  Twitter Event Detector è un'applicazione web il cui obiettivo è quello di rilevare dei micro-eventi (incidenti, concerti, manifestazioni sportive, etc.) all'interno di una città, tramite l'analisi dei tweets geolocalizzati.
 
-                  Il popolare social network Twitter rende disponibili un’enorme quantità di dati dei loro utenti, a cui vengono associate l’esatte  geolocalizzazioni, condivise in real time. Gli utenti volontariamente condividono, in ambienti pubblici, foto, video e testi che riflettono la loro attenzione, interesse, opinioni, espressioni artistiche e, in alcuni casi, cosa succede intorno a loro.
+                  Il Twitter rende disponibile un'enorme quantità di dati dei loro utenti, a cui vengono associate l'esatte  geolocalizzazioni, condivise in real time. Gli utenti volontariamente condividono, in ambienti pubblici, foto, video e testi che riflettono la loro attenzione, interesse, opinioni, espressioni artistiche e, in alcuni casi, cosa succede intorno a loro.
 
-                  Questi dati presentano un’opportunità di scoprire micro eventi usando solamente il contenuto dei tweets. Definisco i micro eventi come eventi che avvengono in un punto preciso di una città, come ad esempio in una strada o in un palazzo, piuttosto che eventi che avvengono in tutta la città o in tutto uno stato.
+                  Questi dati presentano un'opportunità di scoprire micro eventi usando solamente il contenuto dei tweets. Definisco i micro eventi come eventi che avvengono in un punto preciso di una città, come ad esempio in una strada o in un palazzo, piuttosto che eventi che avvengono in tutta la città o in tutto uno stato.
 
-                  Questi eventi possono essere da un concerto, a un’esibizione, a una protesta, a una emergenza come un incendio o un’esplosione. 
+                  Questi eventi possono essere un concerto, un'esibizione, una protesta, una emergenza come un incendio o un'esplosione. 
 
       img-path: assets/img/twitter-event-detector.png
       style: "width:100%"

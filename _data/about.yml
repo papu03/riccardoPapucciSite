@@ -1,8 +1,7 @@
 languages: 
   - language: "it"
     title: Chi sono
-    description:  Benvenuti nella sezione dedicata a scoprire ulteriori dettagli su di me, il mio lavoro e le mie attuali competenze, con un focus principale su programmazione e tecnologia.
-                  Sono qui per condividere con te la mia storia, la mia passione per l'innovazione e il mio impegno nell'ambito della tecnologia.
+    description:  Sono qui per condividere la mia passione per l'innovazione e il mio impegno nell'ambito del software.
     content-title: Scopri di più su di me!
     contact-title: contatti
     content:  Sono un <strong>Ingegnere Informatico</strong> con una laurea magistrale, e ho trascorso molti anni creando soluzioni innovative presso l'azienda chiamata <a rel="noreferrer" href="{{site.data.social[2].href}}" target="_blank">MAIOR</a>. 
@@ -24,21 +23,19 @@ languages:
             
             named <a rel="noreferrer" href="{{site.data.social[2].href}}" target="_blank">MAIOR</a>. 
             
-            My expertise lies in crafting cutting-edge web applications, specifically tailored for the aviation industry. 
+            My expertise lies in developing web applications, specifically for the aviation industry.. 
             
-            Armed with a solid foundation from my university years, I have honed my skills over more than five years, playing a pivotal role in conceptualizing and bringing to life a <strong>Web Application</strong> designed exclusively for airlines. 
+            Armed with a solid foundation from my university years, I improved my skills over more than 6 years, playing an important role in designing and creating a <strong>Web Application</strong> designed exclusively for airlines. 
             
-            I am well-versed in the entire software lifecycle, having been deeply involved in every aspect - from the initial design phase to the comprehensive execution as a <strong>Full-Stack Developer</strong>.
+            I have strong experience and expertise in managing the entire software lifecycle, having been deeply involved in every aspect - from the initial design phase to the comprehensive execution as a <strong>Full-Stack Developer</strong>.
             
             My journey includes not just creating applications from scratch but also overseeing the intricate details of the software development process. 
             
-            I specialize in continuous integration and continuous deployment (CI/CD) for both the backend and frontend, as well as managing the database. 
+            I specialize in Continuous Integration and Continuous Delivery (CI/CD) for both the backend and frontend, as well as managing the database. 
             
-            Additionally, my expertise extends to the realm of DevOps, ensuring a seamless and efficient development process.
-            
-            My commitment to excellence and my hands-on experience have made me an industry expert. 
-            
-            I am passionate about transforming ideas into robust digital solutions, and I'm excited about the prospect of bringing my skills to your project. 
-            
-            Let's connect and explore how I can contribute to the success of your next endeavor!
+            Additionally, I have experience in DevOps, making sure the development process is smooth and efficient.
+                        
+            I am passionate about transforming ideas into robust digital solutions.
+
+            Let's connect and explore how I can contribute to the success of your next project!
    

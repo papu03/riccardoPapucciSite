@@ -29,10 +29,5 @@ COPY --from=builder /usr/src/app/_site /usr/share/nginx/html
 # Copia i certificati SSL (assicurati di averli nella directory _nginx/ssl)
 COPY _nginx/ssl /etc/nginx/ssl
 
-# Instucting docker that we wish to expose port 80 and 443
-# EXPOSE 80
-# EXPOSE 443
-
-
 # Secifing the command that will be run when the container starts, this case running nginix in the foreground.
 CMD ["nginx", "-g", "daemon off;"]
