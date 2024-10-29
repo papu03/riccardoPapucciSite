@@ -20,10 +20,8 @@ languages:
     content:  I am a <strong>Computer Engineer</strong> with a Master's degree, 
 
             and I've dedicated many years of my career to the dynamic world of technology at a prominent company 
-            
-            named <a rel="noreferrer" href="{{site.data.social[2].href}}" target="_blank">MAIOR</a>. 
-            
-            My expertise lies in developing web applications, specifically for the aviation industry.. 
+
+            named <strong>MAIOR</strong>.  My expertise lies in developing web applications, specifically for the aviation industry.. 
             
             Armed with a solid foundation from my university years, I improved my skills over more than 6 years, playing an important role in designing and creating a <strong>Web Application</strong> designed exclusively for airlines. 
             
