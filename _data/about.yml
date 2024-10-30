@@ -4,7 +4,7 @@ languages:
     description:  Sono qui per condividere la mia passione per l'innovazione e il mio impegno nell'ambito del software.
     content-title: Scopri di più su di me!
     contact-title: contatti
-    content:  Sono un <strong>Ingegnere Informatico</strong> con una laurea magistrale, e ho trascorso molti anni creando soluzioni innovative presso l'azienda chiamata <a rel="noreferrer" href="{{site.data.social[2].href}}" target="_blank">MAIOR</a>. 
+    content:  Sono un <strong>Ingegnere Informatico</strong> con una laurea magistrale, e ho trascorso molti anni creando soluzioni innovative presso l'azienda chiamata <strong>MAIOR</strong>. 
               Grazie alla mia solida formazione accademica e alla mia esperienza pluriennale, ho contribuito in modo significativo alla realizzazione di una <strong>Web Application</strong> su misura per le compagnie aeree. 
               Come <strong>Full-Stack Developer</strong>, ho affrontato ogni sfida del ciclo di vita del software, dalla concezione all'implementazione. 
               Il mio obiettivo è sempre stato quello di superare i limiti, garantendo un'eccellenza in ogni dettaglio del processo di sviluppo. 
