@@ -2,7 +2,7 @@ version: '2.2'
 
 services:
   riccardopapucci:
-      image: papucci/nginx-riccardopapucci:1.0.3
+      image: papucci/nginx-riccardopapucci:1.0.5
       ports:
           - 80:8080
           - 443:443
